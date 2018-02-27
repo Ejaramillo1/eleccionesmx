@@ -10,14 +10,7 @@ libraries(my_packages)
 # Posteriormente subimos los datos
 censo_2010 <- read_csv("05 Censo de población por secciones electorales 2010.csv")
 
-# Ahora vamos a ver los datos que tenesmo
+colnames(censo_2010)
 
-map <- read.shapefile("MUNICIPIO")
-plot(map)
-
-
-library("raster")
-
-
-map <- shapefile("SECCION.shp")
-plot(map)
+str(Clavegeo)
+str(censo_2010)
